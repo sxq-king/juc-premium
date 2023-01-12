@@ -5,17 +5,13 @@ package org.example;
  */
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-        try {
+        int add = add(100, 101);
+        System.out.println(add);
 
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-
-        }
-        new Thread(() -> {
-
-        }, "t1").start();
     }
+
+    public static int add(int a, int b){
+        return a + b;
+    };
 
 }
